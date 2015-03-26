@@ -1,0 +1,8 @@
+{
+    "test": {
+        "firebase": {
+            "url": "https://resplendent-torch-7347.firebaseio.com/",
+            "token": "Cjw0KQOgdnsXD1ao9XWnEEcxkX6c9nuC7XE4bjTn"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "loopback-connector-firebase",
+  "version": "0.0.1",
+  "description": "Loopback Connector for firebase NoSql Database. LoopBack is an API Mgmt/MBaas platform built on top of express by Strongloop. It supports the notion of connectors to connect to databases, restful web services, soap web services etc. This project is a connector for loopback for connecting to Redis Database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.test.js",
+    "coverage": "istanbul cover node_modules/.bin/_mocha test/*.test.js && open coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Synerzip/loopback-connector-firebase"
+  },
+  "keywords": [
+    "loopback",
+    "strongloop",
+    "connector",
+    "hbase"
+  ],
+  "author": "Amol Kulkarni",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Synerzip/loopback-connector-firebase/issues"
+  },
+  "homepage": "https://github.com/Synerzip/loopback-connector-firebase",
+  "dependencies": {
+    "async": "^0.9.0",
+    "firebase": "^2.2.3",
+    "firebase-token-generator": "^2.0.0",
+    "loopback-connector": "^1.2.1",
+    "loopback-datasource-juggler": "^2.19.2"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.7",
+    "chai": "^2.1.1",
+    "mocha": "^2.2.1",
+    "rc": "^0.6.0",
+    "should": "^5.1.0"
+  }
+}
