@@ -13,7 +13,7 @@ describe('DataSource',function(){
   var ds = null;
   var User = null;
   this.timeout(5000);
-  console.log('Try increasing timeout if failing due to timeout exceeeded');
+  console.log('Try increasing timeout if failing due to timeout exceeded');
 
   beforeEach(function(done){
     ds = getDataSource();

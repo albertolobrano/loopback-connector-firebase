@@ -40,7 +40,7 @@ function createUser (user) {
       console.log("creation failed");
     } else {
       console.log("user created");
-      //checkUser(user.id);
+      checkUser(user.id);
       if (user.id === 'kamol') {
         readAllUsers();
       }
