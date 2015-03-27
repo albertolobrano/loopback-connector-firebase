@@ -13,6 +13,7 @@ describe('DataSource',function(){
   var ds = null;
   var User = null;
   this.timeout(5000);
+  console.log('Try increasing timeout if failing due to timeout exceeeded');
 
   beforeEach(function(done){
     ds = getDataSource();
@@ -35,9 +36,13 @@ describe('DataSource',function(){
       } else {
         console.log("Authenticated successfully with payload:");
         User.destroyAll(function(){
-          expect(err).to.be.null;
+          expect(err).to.satisfy(function(err){
+            return err === null || err === undefined
+          });
           Project.destroyAll(function(err){
-            expect(err).to.be.null;
+            expect(err).to.satisfy(function(err){
+              return err === null || err === undefined
+            });
             done();
           });
         });
@@ -58,7 +63,6 @@ describe('DataSource',function(){
 
     var user1={id:'amol', name: 'Amol Kulkarni'};
     User.create(user1, function (err, user) {
-      // TODO: remove extra id dereferencing  from user
       expect(err).to.be.null;
       expect(user.id).to.equal(user1.id);
       expect(user.name).to.equal(user1.name);
@@ -181,8 +185,8 @@ describe('DataSource',function(){
   it('should not be able find a non existent User',function(done){
 
     User.findById('200',function(err,user){
-      expect(user.id).to.be.undefined;
-      expect(user.name).to.be.undefined;
+      expect(err).not.to.be.null;
+      expect(user).to.be.null;
       done();
     })
 

@@ -1,8 +1,13 @@
 {
+    "dev": {
+        "firebase": {
+            "url": "https://loopback-test.firebaseio.com/",
+            "token": "e8cYsM4O4DtqIvz9FamGgwkLzVlEXhKoHtoj6m9X"
+        }
+    },
     "test": {
         "firebase": {
-            "url": "https://resplendent-torch-7347.firebaseio.com/",
-            "token": "Cjw0KQOgdnsXD1ao9XWnEEcxkX6c9nuC7XE4bjTn"
+            "url": "https://test.firebaseio.com/"
         }
     }
 }
