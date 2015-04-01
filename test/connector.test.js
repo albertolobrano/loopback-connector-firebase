@@ -185,7 +185,7 @@ describe('DataSource',function(){
   it('should not be able find a non existent User',function(done){
 
     User.findById('200',function(err,user){
-      expect(err).not.to.be.null;
+      expect(err).to.be.null;
       expect(user).to.be.null;
       done();
     })
