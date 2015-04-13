@@ -28,7 +28,7 @@
     "firebase": "^2.2.3",
     "firebase-token-generator": "^2.0.0",
     "loopback-connector": "^1.2.1",
-    "loopback-datasource-juggler": "^2.19.2"
+    "loopback-datasource-juggler": "^2.22.0"
   },
   "devDependencies": {
     "istanbul": "^0.3.7",
