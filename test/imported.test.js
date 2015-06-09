@@ -6,8 +6,8 @@ describe('firebase imported features', function () {
   });
 
   require('loopback-datasource-juggler/test/datatype.test.js');
-  require('loopback-datasource-juggler/test/common.batch.js');
-  require('loopback-datasource-juggler/test/default-scope.test.js');
-  require('loopback-datasource-juggler/test/include.test.js');
+  require('loopback-datasource-juggler/test/basic-querying.test.js');
+  require('loopback-datasource-juggler/test/manipulation.test.js');
+  require('loopback-datasource-juggler/test/hooks.test.js');
 
 });
